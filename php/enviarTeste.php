@@ -25,13 +25,13 @@ try{
     $mail->isSMTP();                               
     $mail->Host = 'smtp.gmail.com';  
     $mail->SMTPAuth = true;                            
-    $mail->Username = 'amandanovais784@gmail.com'; //email que está sendo mandado
-    $mail->Password = 'buzwuirkedfxqume';           
+    $mail->Username = 'teste@teste'; //email que está sendo mandado
+    $mail->Password = 'teste';           
     $mail->SMTPSecure = 'tls';                           
     $mail->Port = 587;  
     
-    $mail->setFrom('amandanovais784@gmail.com', 'Amanda Novais');
-    $mail->addAddress('crm@schunk.app'); //email de recebimento
+    $mail->setFrom('teste@teste', 'Teste');
+    $mail->addAddress('teste@teste'); //email de recebimento
     $mail->addCC($_SESSION['email'], $_SESSION['nome']); //e-mail de quem está logado
     
     $mail->isHTML(true);                                  

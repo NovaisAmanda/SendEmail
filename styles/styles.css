@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:wght@100;400;600&display=swap');
+
+:root{
+    --cor-primaria: #024873;
+    --cor-secundaria: #f6f6f6;
+    --cor-terciaria: #22D4FD;
+    --cor-hover: #272727;
+
+    --fonte-principal: 'Krona One', sans-serif;
+    --fonte-secundaria: 'Montserrat', sans-serif;
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    box-sizing: border-box; /*Esta tag serve para fazer com que os elementos filhos respeitem o pai e não fuja do conteudo*/
+    background-color: var(--cor-primaria);
+    color: var(--cor-primaria);
+}   
+.conteiner{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.form__login{
+    padding: 5% 10%;
+    margin-top: 5%;
+    background: var(--cor-secundaria);
+    display: flex;
+    flex-direction: column;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
+}
+.form__login__titulo{
+    color:var(--cor-primaria);
+    font-family: var(--fonte-principal);
+    text-transform: uppercase;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+.form__login__input{
+    border: none;
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 0px 16px;
+    height: 30px;
+    padding: 5px;
+}
+.form__login__button{
+    background: var(--cor-primaria);
+    border: none;
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 0px 16px;
+    height: 40px;
+    padding: 5px;
+    color: var(--cor-secundaria);
+    transition: 2s background;
+}
+.form__login__button:hover{
+    background: var(--cor-hover);
+}
+.usuario{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px;
+}
+.user__titulo{
+    color: var(--cor-secundaria);
+    font-family: var(--fonte-principal);
+    font-size: 1.5rem;
+}
+.user__sair{
+    text-decoration: none;
+    background: var(--cor-secundaria);
+    color: var(--cor-hover);
+    font-family: var(--fonte-secundaria);
+    font-weight: 600;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: 2s background;
+}
+.user__sair:hover{
+    background: var(--cor-hover);
+    color: var(--cor-secundaria);
+}
+.conteiner__buscar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2%;
+}
+.form__login__buscar{
+    display: flex;
+    gap: 20px;
+    background: var(--cor-secundaria);
+    padding: 1% 2%;
+}
+#result{
+    color:var(--cor-secundaria);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.table__buscar{
+    background: var(--cor-secundaria);
+    color: var(--cor-hover);
+    font-family: var(--fonte-secundaria);
+    text-align: center;
+}
+.thead__buscar{
+    padding: 1%;
+    text-align: left;
+    background-color: var(--cor-hover);
+    color: var(--cor-secundaria);
+}
+.th__buscar{
+    padding: 20px;
+}
+.enviarEmailButton{
+    border: none;
+    margin: 10px;
+    width: 100%;
+    height: 35px;
+    background: var(--cor-secundaria);
+    transition: 2s background;
+}
+.enviarEmailButton:hover{
+    background-color: var(--cor-hover);
+    color: var(--cor-secundaria); 
+}
+.rodape{
+    color: var(--cor-secundaria);
+    background: var(--cor-hover);
+    padding: 24px;
+    text-align: center;
+    font-family: var(--fonte-secundaria);
+    font-size: 1rem;
+    font-weight: 400;
+    margin-top: 27.6%;
+}
+.rodape a{
+    color: #f6f6f6;
+}
